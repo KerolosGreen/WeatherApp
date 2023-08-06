@@ -7,7 +7,7 @@ function Container(){
     const [locationdata,setlocationdata]=useState({});
     // const url='https://api.weatherapi.com/v1/current.json?key=19a2c5e9ede743739a595703230608&q=cairo';
     // const locationurl='https://api.openweathermap.org/geo/1.0/direct?q='+location+'&appid=2e82a3f2ec28eac87096d549e531b9b6';
-const api='ebfbec9dff044492bfb193307230608';
+    const api='d9b746421aac4823825195239230608';
     const url='https://api.weatherapi.com/v1/forecast.json?key='+api+'&q='+location+'&days=0';
     const date= new Date();
     const now=date.getHours();
@@ -91,22 +91,22 @@ const api='ebfbec9dff044492bfb193307230608';
             {data.location!=undefined &&
             <div className="right">
                 <div className="info">
-                    <div className="hour">
-                        <p>{(now+1)>12?(now+1)%12+"PM":(now+1)%12+"AM"}</p>
-                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+1)].temp_c.toFixed()+"°C":null}</p>
+                   <div className="hour">
+                        <p>{(now+1)%24>12?(now+1)%12+" PM":(now+1)%12+" AM"}</p>
+                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+1)%24].temp_c.toFixed()+" °C":null}</p>
                     </div>
 
                     <div className="hour">
-                        <p>{(now+2)>12?(now+2)%12+"PM":(now+2)%12+"AM"}</p>
-                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+2)].temp_c.toFixed()+"°C":null}</p>
+                        <p>{(now+2)%24>12?(now+2)%12+" PM":(now+2)%12+" AM"}</p>
+                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+2)%24].temp_c.toFixed()+" °C":null}</p>
                     </div>
                     <div className="hour">
-                        <p>{(now+3)>12?(now+3)%12+"PM":(now+3)%12+"AM"}</p>
-                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+3)].temp_c.toFixed()+"°C":null}</p>
+                        <p>{(now+3)%24>12?(now+3)%12+" PM":(now+3)%12+" AM"}</p>
+                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+3)%24].temp_c.toFixed()+" °C":null}</p>
                     </div>
                     <div className="hour">
-                        <p>{(now+4)>12?(now+4)%12+"PM":(now+4)%12+"AM"}</p>
-                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+4)].temp_c.toFixed()+"°C":null}</p>
+                        <p>{(now+4)%24>12?(now+4)%12+" PM":(now+4)%12+" AM"}</p>
+                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+4)%24].temp_c.toFixed()+" °C":null}</p>
                     </div>
                 </div>
                 <div className="rotated">
