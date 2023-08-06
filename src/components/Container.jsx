@@ -56,9 +56,9 @@ function Container(){
         <div className="container" >
             {data.location==undefined &&
             <div className="welcoming-div"> 
-            <h1>Welcome</h1>
-            <h1>This Is Weather Web App</h1>
-            <h1>Search Your location Now!</h1>
+            <h1>Just a Weather</h1>
+            <h1>Web App</h1>
+            <h1>To Monitor The Weather</h1>
             <div className="search">
             <input type="Text" className="form-control w-75 mx-auto m-2" id="exampleFormControlInput1" placeholder="Search For Location" onChange={onchangelocation} />
             <button type="submit" className="btn btn-dark w-25 m-2" onClick={getweather}>Search</button>
