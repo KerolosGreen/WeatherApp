@@ -81,7 +81,7 @@ function Container(){
             {data.location!=undefined&&
             <div className="top">
                 <p>{data.location?data.location.name:null} , <span>{data.location?data.location.country:null}</span></p>
-                <h1>{data.current?data.current.temp_c.toFixed():null}°C<sub> .Overnight{data.forecast?data.forecast.forecastday[0].day.mintemp_c.toFixed():null}°C</sub></h1>
+                <h1>{data.current?data.current.temp_c.toFixed():null}°C<sub> .Min {data.forecast?data.forecast.forecastday[0].day.mintemp_c.toFixed():null}°C</sub></h1>
                 <p>{livetime}</p>
                 <p></p>
             </div>
