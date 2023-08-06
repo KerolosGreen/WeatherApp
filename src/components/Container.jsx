@@ -80,7 +80,7 @@ function Container(){
             {data.location!=undefined&&
             <div className="top">
                 <p>{data.location?data.location.name:null} , <span>{data.location?data.location.country:null}</span></p>
-                <h1>{data.current?data.current.temp_c.toFixed():null} °C<sub> {data.forecast?data.forecast.forecastday[0].day.mintemp_c.toFixed():null}°C</sub></h1>
+                <h1>{data.current?data.current.temp_c.toFixed():null}°C<sub> {data.forecast?data.forecast.forecastday[0].day.mintemp_c.toFixed():null}°C</sub></h1>
                 <p>{livetime}</p>
                 <p></p>
             </div>
@@ -92,20 +92,20 @@ function Container(){
                 <div className="info">
                     <div className="hour">
                         <p>{(now+1)>12?(now+1)%12+"PM":(now+1)%12+"AM"}</p>
-                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+1)].temp_c.toFixed()+" °C":null}</p>
+                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+1)].temp_c.toFixed()+"°C":null}</p>
                     </div>
 
                     <div className="hour">
                         <p>{(now+2)>12?(now+2)%12+"PM":(now+2)%12+"AM"}</p>
-                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+2)].temp_c.toFixed()+" °C":null}</p>
+                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+2)].temp_c.toFixed()+"°C":null}</p>
                     </div>
                     <div className="hour">
                         <p>{(now+3)>12?(now+3)%12+"PM":(now+3)%12+"AM"}</p>
-                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+3)].temp_c.toFixed()+" °C":null}</p>
+                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+3)].temp_c.toFixed()+"°C":null}</p>
                     </div>
                     <div className="hour">
                         <p>{(now+4)>12?(now+4)%12+"PM":(now+4)%12+"AM"}</p>
-                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+4)].temp_c.toFixed()+" °C":null}</p>
+                        <p>{data.forecast?data.forecast.forecastday[0].hour[(now+4)].temp_c.toFixed()+"°C":null}</p>
                     </div>
                 </div>
                 <div className="rotated">
