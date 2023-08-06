@@ -202,7 +202,7 @@ font-size: 1rem;
 @media screen and (max-width :810px) {
     .rotated{
         top: 30%;
-        left: 89%;
+        left: 88%;
     }
 }
 @media screen and (max-width :700px) {
@@ -225,7 +225,7 @@ font-size: 1rem;
     }
     .rotated{
         top: 30%;
-        left: 89%;
+        left: 88%;
     }
     .bottom h2{
     font-size: .8rem;    
