@@ -66,7 +66,7 @@ function Container(){
             </div>
             <div className="about">
                 <a href=""><i className="fab fa-github"></i>GitHub</a>
-                <a href=""><i className="fab fa-linkedin"></i>Linked In</a>
+                <a href="https://www.linkedin.com/in/kerolos-safwat-gr"><i className="fab fa-linkedin"></i>Linked In</a>
             </div>
             </div>
             }
