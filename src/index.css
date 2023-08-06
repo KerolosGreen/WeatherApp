@@ -207,7 +207,7 @@ font-size: 1rem;
 }
 @media screen and (max-width :700px) {
     .container{
-        max-height: 700px;
+        max-height: 600px;
     }
     .container:before{
         content: '';
