@@ -26,7 +26,7 @@ function Container(){
             }
             
             
-          }, 100);
+          }, 20000);
       });
       
     function getweather(){
