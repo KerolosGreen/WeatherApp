@@ -7,7 +7,8 @@ function Container(){
     const [locationdata,setlocationdata]=useState({});
     // const url='https://api.weatherapi.com/v1/current.json?key=19a2c5e9ede743739a595703230608&q=cairo';
     // const locationurl='https://api.openweathermap.org/geo/1.0/direct?q='+location+'&appid=2e82a3f2ec28eac87096d549e531b9b6';
-    const url='https://api.weatherapi.com/v1/forecast.json?key=19a2c5e9ede743739a595703230608&q='+location+'&days=0';
+const api='ebfbec9dff044492bfb193307230608';
+    const url='https://api.weatherapi.com/v1/forecast.json?key='+api+'&q='+location+'&days=0';
     const date= new Date();
     const now=date.getHours();
     const minutes=date.getMinutes();
