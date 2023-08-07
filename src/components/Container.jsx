@@ -92,20 +92,20 @@ function Container(){
             <div className="right">
                 <div className="info">
                    <div className="hour">
-                        <p>{(now+1)%24>12?(now+1)%12+" PM":(now+1)%12+" AM"}</p>
+                        <p>{(now+1)%24>=12?(now+1)%12+" PM":(now+1)%12+" AM"}</p>
                         <p>{data.forecast?data.forecast.forecastday[0].hour[(now+1)%24].temp_c.toFixed()+" °C":null}</p>
                     </div>
 
                     <div className="hour">
-                        <p>{(now+2)%24>12?(now+2)%12+" PM":(now+2)%12+" AM"}</p>
+                        <p>{(now+2)%24>=12?(now+2)%12+" PM":(now+2)%12+" AM"}</p>
                         <p>{data.forecast?data.forecast.forecastday[0].hour[(now+2)%24].temp_c.toFixed()+" °C":null}</p>
                     </div>
                     <div className="hour">
-                        <p>{(now+3)%24>12?(now+3)%12+" PM":(now+3)%12+" AM"}</p>
+                        <p>{(now+3)%24>=12?(now+3)%12+" PM":(now+3)%12+" AM"}</p>
                         <p>{data.forecast?data.forecast.forecastday[0].hour[(now+3)%24].temp_c.toFixed()+" °C":null}</p>
                     </div>
                     <div className="hour">
-                        <p>{(now+4)%24>12?(now+4)%12+" PM":(now+4)%12+" AM"}</p>
+                        <p>{(now+4)%24>=12?(now+4)%12+" PM":(now+4)%12+" AM"}</p>
                         <p>{data.forecast?data.forecast.forecastday[0].hour[(now+4)%24].temp_c.toFixed()+" °C":null}</p>
                     </div>
                 </div>
