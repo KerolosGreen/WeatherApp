@@ -128,7 +128,7 @@ box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.534);
 .rotated{
     font-size: 21px;
     font-weight: 400;
-    display: inline;
+    display: flex;
     width: fit-content;
     align-items: baseline;
     justify-content: center;
